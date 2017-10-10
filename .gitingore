@@ -1,2 +1,3 @@
 *.csv
+dist/projects.csv
 dist/bundle.js

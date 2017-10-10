@@ -1,0 +1,19 @@
+{
+  "name": "reactive-bourke",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "./node_modules/.bin/webpack src/index.js dist/bundle.js",
+    "serve": "cd dist/ && python -m SimpleHTTPServer 8000"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^3.6.0"
+  },
+  "dependencies": {
+    "d3": "^4.11.0"
+  }
+}

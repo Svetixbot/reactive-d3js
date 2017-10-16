@@ -5,15 +5,17 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "./node_modules/.bin/webpack src/index.js dist/bundle.js",
     "serve": "cd dist/ && python -m SimpleHTTPServer 8000"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "jeet": "^7.2.0",
+    "node-sass": "^4.5.3",
     "webpack": "^3.6.0"
   },
   "dependencies": {
-    "d3": "^4.11.0"
+    "d3": "^4.11.0",
+    "sass-loader": "^6.0.6"
   }
 }

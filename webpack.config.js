@@ -10,19 +10,18 @@ module.exports = {
     filename: "bundle.js"
   },
   module: {
-    rules: [{
+    rules: [
+      {
         test: /\.scss$/,
-        use: [{
-            loader: "style-loader" // creates style nodes from JS strings
-        }, {
-            loader: "css-loader" // translates CSS into CommonJS
-        }, {
-            loader: "sass-loader", // compiles Sass to CSS
-            options: {
-                includePaths: ["absolute/path/a", "absolute/path/b"]
-            }
-        }]
-    }]
+        include: __dirname + "/src",
+        loaders: ['style-loader', 'css-loader', 'sass-loader' ]
+      },
+      {
+        test: /\.handlebars$/,
+        include: __dirname + "/src",
+        loader: "handlebars-loader"
+      }
+    ]
   },
   plugins: debug ? [] : [
     new webpack.optimize.DedupePlugin(),

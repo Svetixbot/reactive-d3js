@@ -10,12 +10,16 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "jeet": "^7.2.0",
     "node-sass": "^4.5.3",
-    "webpack": "^3.6.0"
+    "webpack": "^3.6.0",
+    "css-loader": "^0.28.7",
+    "handlebars-loader": "^1.6.0",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.19.0"
   },
   "dependencies": {
     "d3": "^4.11.0",
-    "sass-loader": "^6.0.6"
+    "handlebars": "^4.0.10",
+    "purecss-sass": "^1.0.0"
   }
 }

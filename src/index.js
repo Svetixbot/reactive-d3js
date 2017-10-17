@@ -1,5 +1,10 @@
-import * as d3 from 'd3';
+//import * as d3 from 'd3';
 
+require("./styles.scss");
+
+document.getElementById('dashboard').innerHTML = require("./book-listing.handlebars")();
+
+/*
 var svg = d3.select("#projects"),
     margin = {top: 0, right: 20, bottom: 0, left: 40},
     width = +svg.attr("width") - margin.left - margin.right,
@@ -276,3 +281,4 @@ d3.csv("projects.csv", function(d, i, columns) {
       .attr("font-weight", "bold")
       .attr("text-anchor", "start")
 });
+*/
